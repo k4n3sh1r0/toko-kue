@@ -16,11 +16,11 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'SweetCrumb Artisan Donut & Mochi | Binjai, Sumatera Utara',
-  description: 'Toko mochi donut, artisan donut, dan classic donut fresh baked setiap hari di Jl. Ikan Hiu No.59, Binjai, Sumatera Utara. Pesan praktis langsung via WhatsApp!',
-  keywords: ['mochi donut binjai', 'artisan donut binjai', 'toko donat binjai', 'daifuku donut', 'classic donut 85k', 'pesan donat sumatera utara'],
+  title: 'BWL (Baked with Love) | Mochi & Artisan Donut Binjai',
+  description: 'BWL (Baked with Love) — Toko mochi donut, artisan donut, dan classic donut fresh baked setiap hari di Jl. Ikan Hiu No.59, Binjai, Sumatera Utara. Pesan praktis langsung via WhatsApp!',
+  keywords: ['BWL', 'baked with love', 'mochi donut binjai', 'artisan donut binjai', 'toko donat binjai', 'daifuku donut', 'classic donut 85k', 'pesan donat sumatera utara'],
   openGraph: {
-    title: 'SweetCrumb Artisan Donut & Mochi | Binjai',
+    title: 'BWL (Baked with Love) | Binjai',
     description: 'Pesan mochi donut dan artisan donut favoritmu langsung diantar atau ambil di Jl. Ikan Hiu No.59, Binjai.',
     images: ['/images/catalog/menu-mochi-donut.png'],
   },

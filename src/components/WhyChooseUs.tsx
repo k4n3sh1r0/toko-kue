@@ -36,10 +36,10 @@ export default function WhyChooseUs() {
             Standar Kualitas Kami
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl font-extrabold text-[#1f140e]">
-            Mengapa Memilih SweetCrumb?
+            Mengapa Memilih BWL (Baked with Love)?
           </h2>
           <p className="text-sm sm:text-base text-[#675447]">
-            Komitmen kami adalah menyajikan kue yang tidak hanya memanjakan mata, tapi juga tak terlupakan di setiap suapan.
+            Komitmen kami adalah menyajikan donat berkualitas tinggi yang dibuat penuh cinta di setiap gigitan.
           </p>
         </div>
 

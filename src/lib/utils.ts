@@ -11,14 +11,14 @@ export function formatRupiah(amount: number): string {
 }
 
 export function buildWhatsAppLink(items: CartItem[], form: CheckoutForm, subtotal: number): string {
-  const orderNumber = 'SC-' + Math.floor(100000 + Math.random() * 900000);
+  const orderNumber = 'BWL-' + Math.floor(100000 + Math.random() * 900000);
   
   let itemLines = '';
   items.forEach((item, index) => {
     itemLines += `${index + 1}. *${item.name}* (${item.sizeLabel})\n   └ ${item.quantity}x @ ${formatRupiah(item.unitPrice)} = *${formatRupiah(item.quantity * item.unitPrice)}*\n`;
   });
 
-  const message = `🍰 *PESANAN BARU - ${STORE_INFO.name.toUpperCase()}* 🍰
+  const message = `🍩 *PESANAN BARU - ${STORE_INFO.name.toUpperCase()}* 🍩
 ━━━━━━━━━━━━━━━━━━━━━
 *No. Pesanan:* #${orderNumber}
 

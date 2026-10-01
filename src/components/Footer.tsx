@@ -22,12 +22,15 @@ export default function Footer() {
                 <Cake className="w-5 h-5" />
               </div>
               <span className="font-serif text-2xl font-bold tracking-tight text-white">
-                SweetCrumb
+                BWL
+              </span>
+              <span className="text-xs uppercase tracking-wider text-[#d49b4d] font-semibold">
+                (Baked with Love)
               </span>
             </div>
 
             <p className="text-xs sm:text-sm text-[#b09e91] leading-relaxed max-w-sm">
-              Artisan patisserie & bakery berdedikasi menciptakan kue ulang tahun, cheesecake, dan pastry lezat dengan standar bahan baku premium dunia.
+              BWL (Baked with Love) — Tempat terbaik menikmati aneka Mochi Donut kenyal, Artisan Donut beraneka rasa, dan Classic Donut fresh baked setiap hari di Binjai.
             </p>
 
             <div className="flex items-center gap-3 pt-2">

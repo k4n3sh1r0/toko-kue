@@ -23,10 +23,10 @@ export default function Navbar() {
             </div>
             <div>
               <span className="font-serif text-2xl font-bold tracking-tight text-[#1e130c] block leading-none">
-                SweetCrumb
+                BWL
               </span>
               <span className="text-[11px] uppercase tracking-widest text-[#a86c2d] font-semibold mt-1 block">
-                Artisan Donut & Mochi
+                Baked With Love
               </span>
             </div>
           </Link>
@@ -43,7 +43,7 @@ export default function Navbar() {
           <div className="flex items-center gap-3">
             {/* Direct WhatsApp Link */}
             <a
-              href={`https://wa.me/${STORE_INFO.whatsappNumber}?text=Halo%20Admin%20SweetCrumb,%20saya%20mau%20tanya%20seputar%20kue%20hari%20ini`}
+              href={`https://wa.me/${STORE_INFO.whatsappNumber}?text=Halo%20Admin%20BWL,%20saya%20mau%20tanya%20seputar%20donat%20hari%20ini`}
               target="_blank"
               rel="noopener noreferrer"
               className="hidden sm:inline-flex items-center gap-2 px-3.5 py-2 text-xs font-semibold text-emerald-800 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200/80 rounded-full transition-all"
@@ -116,7 +116,7 @@ export default function Navbar() {
           </a>
           <div className="pt-2">
             <a
-              href={`https://wa.me/${STORE_INFO.whatsappNumber}?text=Halo%20Admin%20SweetCrumb`}
+              href={`https://wa.me/${STORE_INFO.whatsappNumber}?text=Halo%20Admin%20BWL`}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full flex items-center justify-center gap-2 py-2.5 text-sm font-semibold text-emerald-800 bg-emerald-100/60 rounded-xl"

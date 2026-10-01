@@ -59,12 +59,12 @@ export default function HeroSection() {
                 <ArrowRight className="w-4 h-4" />
               </a>
               <a
-                href={`https://wa.me/${STORE_INFO.whatsappNumber}?text=Halo%20Admin%20SweetCrumb,%20bisa%20konsultasi%20custom%20cake?`}
+                href={`https://wa.me/${STORE_INFO.whatsappNumber}?text=Halo%20Admin%20BWL,%20saya%20mau%20tanya%20varian%20donat%20ready%20hari%20ini`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white hover:bg-[#f6efe7] border border-[#d8beaa] text-[#4a3628] font-semibold text-sm transition-all"
               >
-                <span>Konsultasi Custom Cake</span>
+                <span>Tanya Admin WhatsApp</span>
               </a>
             </div>
 
