@@ -5,6 +5,7 @@ import WhyChooseUs from '@/components/WhyChooseUs';
 import Testimonials from '@/components/Testimonials';
 import FAQSection from '@/components/FAQSection';
 import CartDrawer from '@/components/CartDrawer';
+import FloatingCartButton from '@/components/FloatingCartButton';
 import Footer from '@/components/Footer';
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
 
       {/* Floating & Slideout Cart */}
       <CartDrawer />
+      <FloatingCartButton />
 
       {/* Footer */}
       <Footer />

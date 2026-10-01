@@ -69,20 +69,20 @@ export default function HeroSection() {
             </div>
 
             {/* Micro Social Proof */}
-            <div className="pt-4 flex items-center justify-center lg:justify-start gap-6 border-t border-[#ebdccc]/80">
+            <div className="pt-4 grid grid-cols-3 gap-2 sm:flex sm:items-center sm:justify-start sm:gap-6 border-t border-[#ebdccc]/80 text-center sm:text-left">
               <div>
-                <div className="font-serif text-2xl font-bold text-[#2a1b12]">4.9 / 5.0</div>
-                <div className="text-xs text-[#766356]">Dari 1.200+ Ulasan</div>
+                <div className="font-serif text-lg sm:text-2xl font-bold text-[#2a1b12]">4.9 / 5.0</div>
+                <div className="text-[11px] sm:text-xs text-[#766356]">1.200+ Ulasan</div>
               </div>
-              <div className="h-8 w-[1px] bg-[#dec9b8]" />
+              <div className="hidden sm:block h-8 w-[1px] bg-[#dec9b8]" />
               <div>
-                <div className="font-serif text-2xl font-bold text-[#2a1b12]">10,000+</div>
-                <div className="text-xs text-[#766356]">Kue Terkirim Bahagia</div>
+                <div className="font-serif text-lg sm:text-2xl font-bold text-[#2a1b12]">10,000+</div>
+                <div className="text-[11px] sm:text-xs text-[#766356]">Kue Terkirim</div>
               </div>
-              <div className="h-8 w-[1px] bg-[#dec9b8]" />
+              <div className="hidden sm:block h-8 w-[1px] bg-[#dec9b8]" />
               <div>
-                <div className="font-serif text-2xl font-bold text-[#2a1b12]">Same-Day</div>
-                <div className="text-xs text-[#766356]">Tersedia Pengiriman Cepat</div>
+                <div className="font-serif text-lg sm:text-2xl font-bold text-[#2a1b12]">Same-Day</div>
+                <div className="text-[11px] sm:text-xs text-[#766356]">Pesan Cepat</div>
               </div>
             </div>
           </div>

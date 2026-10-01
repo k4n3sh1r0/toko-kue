@@ -60,7 +60,7 @@ export default function CartDrawer() {
   return (
     <div className="fixed inset-0 z-50 overflow-hidden bg-black/60 backdrop-blur-xs flex justify-end animate-in fade-in duration-200">
       <div 
-        className="w-full max-w-lg bg-[#faf7f2] h-full shadow-2xl flex flex-col justify-between border-l border-[#ebdccc] overflow-hidden"
+        className="w-full max-w-lg bg-[#faf7f2] h-[100dvh] shadow-2xl flex flex-col justify-between border-l border-[#ebdccc] overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
         
@@ -238,7 +238,7 @@ export default function CartDrawer() {
                     placeholder="Contoh: Sarah Wijaya"
                     value={form.customerName}
                     onChange={(e) => setForm({ ...form, customerName: e.target.value })}
-                    className="w-full px-3 py-2 text-xs bg-white border border-[#ebdccc] rounded-xl focus:border-[#96551d] outline-none"
+                    className="w-full px-3.5 py-2.5 sm:py-2 text-sm sm:text-xs bg-white border border-[#ebdccc] rounded-xl focus:border-[#96551d] outline-none"
                   />
                 </div>
                 <div>
@@ -251,7 +251,7 @@ export default function CartDrawer() {
                     placeholder="0812xxxxxxxx"
                     value={form.customerPhone}
                     onChange={(e) => setForm({ ...form, customerPhone: e.target.value })}
-                    className="w-full px-3 py-2 text-xs bg-white border border-[#ebdccc] rounded-xl focus:border-[#96551d] outline-none"
+                    className="w-full px-3.5 py-2.5 sm:py-2 text-sm sm:text-xs bg-white border border-[#ebdccc] rounded-xl focus:border-[#96551d] outline-none"
                   />
                 </div>
               </div>
@@ -266,7 +266,7 @@ export default function CartDrawer() {
                     type="date"
                     value={form.deliveryDate}
                     onChange={(e) => setForm({ ...form, deliveryDate: e.target.value })}
-                    className="w-full px-3 py-2 text-xs bg-white border border-[#ebdccc] rounded-xl focus:border-[#96551d] outline-none text-[#332216]"
+                    className="w-full px-3.5 py-2.5 sm:py-2 text-sm sm:text-xs bg-white border border-[#ebdccc] rounded-xl focus:border-[#96551d] outline-none text-[#332216]"
                   />
                 </div>
                 <div>
@@ -276,7 +276,7 @@ export default function CartDrawer() {
                   <select
                     value={form.deliveryTime}
                     onChange={(e) => setForm({ ...form, deliveryTime: e.target.value })}
-                    className="w-full px-3 py-2 text-xs bg-white border border-[#ebdccc] rounded-xl focus:border-[#96551d] outline-none text-[#332216]"
+                    className="w-full px-3.5 py-2.5 sm:py-2 text-sm sm:text-xs bg-white border border-[#ebdccc] rounded-xl focus:border-[#96551d] outline-none text-[#332216]"
                   >
                     <option>Pagi (09:00 - 12:00)</option>
                     <option>Siang (12:00 - 15:00)</option>
@@ -297,7 +297,7 @@ export default function CartDrawer() {
                     placeholder="Nama jalan, nomor rumah, RT/RW, kelurahan, patokan lokasi..."
                     value={form.address}
                     onChange={(e) => setForm({ ...form, address: e.target.value })}
-                    className="w-full px-3 py-2 text-xs bg-white border border-[#ebdccc] rounded-xl focus:border-[#96551d] outline-none"
+                    className="w-full px-3.5 py-2.5 sm:py-2 text-sm sm:text-xs bg-white border border-[#ebdccc] rounded-xl focus:border-[#96551d] outline-none"
                   />
                 </div>
               )}
@@ -312,7 +312,7 @@ export default function CartDrawer() {
                   placeholder='Contoh: "Happy 25th Birthday Nadia! ❤️"'
                   value={form.customGreeting}
                   onChange={(e) => setForm({ ...form, customGreeting: e.target.value })}
-                  className="w-full px-3 py-2 text-xs bg-white border border-[#ebdccc] rounded-xl focus:border-[#96551d] outline-none"
+                  className="w-full px-3.5 py-2.5 sm:py-2 text-sm sm:text-xs bg-white border border-[#ebdccc] rounded-xl focus:border-[#96551d] outline-none"
                 />
               </div>
 

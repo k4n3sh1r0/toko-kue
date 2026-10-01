@@ -49,7 +49,7 @@ export default function ProductCard({ product, onOpenDetail }: ProductCardProps)
         {/* Quick View Button */}
         <button
           onClick={() => onOpenDetail(product)}
-          className="absolute top-3.5 right-3.5 w-9 h-9 rounded-full bg-white/90 hover:bg-white text-[#4a3b32] flex items-center justify-center shadow-md opacity-0 group-hover:opacity-100 transition-all transform translate-y-1 group-hover:translate-y-0"
+          className="absolute top-3.5 right-3.5 w-9 h-9 rounded-full bg-white/95 text-[#4a3b32] flex items-center justify-center shadow-md transition-all opacity-100 sm:opacity-0 sm:group-hover:opacity-100 sm:translate-y-1 sm:group-hover:translate-y-0"
           aria-label="Lihat Detail Kue"
         >
           <Eye className="w-4 h-4 text-[#75461c]" />
@@ -57,7 +57,7 @@ export default function ProductCard({ product, onOpenDetail }: ProductCardProps)
       </div>
 
       {/* Content Area */}
-      <div className="p-5 flex-1 flex flex-col justify-between space-y-4">
+      <div className="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-4">
         <div>
           {/* Rating */}
           <div className="flex items-center gap-1 text-xs text-amber-700 font-semibold mb-1">
@@ -69,7 +69,7 @@ export default function ProductCard({ product, onOpenDetail }: ProductCardProps)
           {/* Title */}
           <h3 
             onClick={() => onOpenDetail(product)}
-            className="font-serif text-lg font-bold text-[#1f140e] group-hover:text-[#96551d] transition-colors cursor-pointer line-clamp-1"
+            className="font-serif text-base sm:text-lg font-bold text-[#1f140e] group-hover:text-[#96551d] transition-colors cursor-pointer line-clamp-1"
           >
             {product.name}
           </h3>
@@ -83,23 +83,32 @@ export default function ProductCard({ product, onOpenDetail }: ProductCardProps)
         <div>
           <div className="text-[11px] font-semibold text-[#8a7667] mb-1.5 flex justify-between">
             <span>Pilihan Ukuran:</span>
-            <span className="text-[#a86c2d]">{currentSize.portion}</span>
+            <span className="text-[#a86c2d] font-bold">{currentSize.portion}</span>
           </div>
-          <div className="grid grid-cols-3 gap-1.5 bg-[#faf5ef] p-1 rounded-xl border border-[#ebdccc]">
-            {product.sizes.map((s, idx) => (
-              <button
-                key={s.label}
-                type="button"
-                onClick={() => setSelectedSizeIndex(idx)}
-                className={`py-1 px-1 rounded-lg text-center text-[10px] transition-all ${
-                  selectedSizeIndex === idx
-                    ? 'bg-white text-[#96551d] font-bold shadow-xs border border-[#e2ccbb]'
-                    : 'text-[#6b584b] hover:text-[#20140c]'
-                }`}
-              >
-                {s.label.split(' ')[0]} {s.label.split(' ')[1] || ''}
-              </button>
-            ))}
+          <div className="grid grid-cols-3 gap-1 bg-[#faf5ef] p-1 rounded-xl border border-[#ebdccc]">
+            {product.sizes.map((s, idx) => {
+              const shortLabel = s.label.includes('Slice')
+                ? 'Slice'
+                : s.label.includes('16')
+                ? 'Ø 16cm'
+                : s.label.includes('20')
+                ? 'Ø 20cm'
+                : s.label;
+              return (
+                <button
+                  key={s.label}
+                  type="button"
+                  onClick={() => setSelectedSizeIndex(idx)}
+                  className={`py-1.5 px-0.5 rounded-lg text-center text-[10px] sm:text-[11px] font-semibold transition-all ${
+                    selectedSizeIndex === idx
+                      ? 'bg-white text-[#96551d] font-bold shadow-xs border border-[#e2ccbb]'
+                      : 'text-[#6b584b] hover:text-[#20140c]'
+                  }`}
+                >
+                  {shortLabel}
+                </button>
+              );
+            })}
           </div>
         </div>
 

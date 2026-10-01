@@ -28,23 +28,23 @@ export default function ProductDetailModal({ product, onClose }: ProductDetailMo
   };
 
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto bg-black/60 backdrop-blur-xs flex items-center justify-center p-4">
+    <div className="fixed inset-0 z-50 overflow-y-auto bg-black/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4">
       <div 
-        className="relative w-full max-w-2xl bg-white rounded-3xl shadow-2xl overflow-hidden border border-[#ebdccc] animate-in fade-in zoom-in-95 duration-200"
+        className="relative w-full max-w-2xl bg-white rounded-3xl shadow-2xl overflow-hidden border border-[#ebdccc] animate-in fade-in zoom-in-95 duration-200 max-h-[92dvh] flex flex-col md:block"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-white/80 hover:bg-white text-[#4a3b32] flex items-center justify-center shadow-md transition-colors"
+          className="absolute top-3 right-3 z-20 w-9 h-9 rounded-full bg-white/90 hover:bg-white text-[#4a3b32] flex items-center justify-center shadow-md transition-colors border border-stone-200"
           aria-label="Tutup"
         >
           <X className="w-5 h-5" />
         </button>
 
-        <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 overflow-y-auto md:overflow-visible">
           {/* Image Side */}
-          <div className="relative aspect-square md:aspect-auto min-h-[260px] md:min-h-[380px] bg-[#fdf8f4]">
+          <div className="relative aspect-[16/10] md:aspect-auto md:min-h-[380px] bg-[#fdf8f4] shrink-0">
             <Image
               src={product.image}
               alt={product.name}
@@ -53,7 +53,7 @@ export default function ProductDetailModal({ product, onClose }: ProductDetailMo
               sizes="(max-width: 768px) 100vw, 350px"
             />
             {product.badge && (
-              <span className="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase bg-[#a86c2d] text-white shadow-md">
+              <span className="absolute top-3 left-3 px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase bg-[#a86c2d] text-white shadow-md">
                 {product.badge}
               </span>
             )}
