@@ -33,7 +33,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="id" className={`${playfair.variable} ${plusJakarta.variable} scroll-smooth`}>
-      <body className="min-h-screen bg-[#faf7f2] text-[#241a15] font-sans antialiased selection:bg-[#e0ad68]/30 selection:text-[#522c07]">
+      <body className="min-h-screen bg-[#fff6f8] text-[#361320] font-sans antialiased selection:bg-pink-200 selection:text-pink-900">
         <CartProvider>
           {children}
         </CartProvider>

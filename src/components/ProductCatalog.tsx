@@ -34,45 +34,45 @@ export default function ProductCatalog() {
   }, [activeCategory, searchQuery]);
 
   return (
-    <section id="menu" className="py-16 md:py-24 bg-[#faf5ee] border-y border-[#ece0d4]">
+    <section id="menu" className="py-16 md:py-24 bg-[#fff1f5] border-y border-[#fbcfe8]/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-10 space-y-3">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#f0e3d5] text-[#96551d] text-xs font-bold uppercase tracking-wider">
-            <Sparkles className="w-3.5 h-3.5" />
+          <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#ffe4ea] text-[#be123c] text-xs font-bold uppercase tracking-wider border border-[#fbcfe8]">
+            <Sparkles className="w-3.5 h-3.5 text-[#f43f5e]" />
             <span>Katalog Resmi & Harga Tertera</span>
           </div>
 
-          <h2 className="font-serif text-3xl sm:text-4xl font-extrabold text-[#1f140e] tracking-tight">
+          <h2 className="font-serif text-3xl sm:text-4xl font-extrabold text-[#2a0e19] tracking-tight">
             Koleksi Mochi & Artisan Donut
           </h2>
 
-          <p className="text-sm sm:text-base text-[#675447]">
-            Dipanggang fresh setiap pagi. Pilih varian donat favoritmu, masukkan ke keranjang, dan langsung checkout ke WhatsApp!
+          <p className="text-sm sm:text-base text-[#692941]">
+            Dipanggang fresh setiap pagi. Pilih varian donat favoritmu, kumpulkan di keranjang, dan langsung checkout ke WhatsApp!
           </p>
 
           {/* Poster Quick Preview Buttons */}
           <div className="pt-2 flex flex-wrap items-center justify-center gap-2">
             <button
               onClick={() => setPosterModal('/images/catalog/menu-mochi-donut.png')}
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white hover:bg-[#f2e7db] text-[#824b1a] text-xs font-semibold border border-[#e2ccbb] shadow-2xs transition-all"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white hover:bg-[#fff0f4] text-[#9f1239] text-xs font-semibold border border-[#fbcfe8] shadow-2xs transition-all"
             >
-              <ImageIcon className="w-3.5 h-3.5 text-[#a86c2d]" />
+              <ImageIcon className="w-3.5 h-3.5 text-[#f43f5e]" />
               <span>Poster Mochi Donut</span>
             </button>
             <button
               onClick={() => setPosterModal('/images/catalog/menu-classic-donut.png')}
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white hover:bg-[#f2e7db] text-[#824b1a] text-xs font-semibold border border-[#e2ccbb] shadow-2xs transition-all"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white hover:bg-[#fff0f4] text-[#9f1239] text-xs font-semibold border border-[#fbcfe8] shadow-2xs transition-all"
             >
-              <ImageIcon className="w-3.5 h-3.5 text-[#a86c2d]" />
+              <ImageIcon className="w-3.5 h-3.5 text-[#f43f5e]" />
               <span>Poster Classic Donut</span>
             </button>
             <button
               onClick={() => setPosterModal('/images/catalog/menu-artisan-donut.png')}
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white hover:bg-[#f2e7db] text-[#824b1a] text-xs font-semibold border border-[#e2ccbb] shadow-2xs transition-all"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white hover:bg-[#fff0f4] text-[#9f1239] text-xs font-semibold border border-[#fbcfe8] shadow-2xs transition-all"
             >
-              <ImageIcon className="w-3.5 h-3.5 text-[#a86c2d]" />
+              <ImageIcon className="w-3.5 h-3.5 text-[#f43f5e]" />
               <span>Poster Artisan Donut</span>
             </button>
           </div>
@@ -86,10 +86,10 @@ export default function ProductCatalog() {
               <button
                 key={cat.value}
                 onClick={() => setActiveCategory(cat.value)}
-                className={`px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all ${
+                className={`px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition-all ${
                   activeCategory === cat.value
-                    ? 'bg-[#96551d] text-white shadow-md shadow-[#96551d]/20'
-                    : 'bg-white text-[#635043] border border-[#ebdccc] hover:bg-[#f3ebe1]'
+                    ? 'bg-gradient-to-r from-[#f43f5e] to-[#ec4899] text-white shadow-md shadow-[#f43f5e]/25'
+                    : 'bg-white text-[#5c2438] border border-[#fbcfe8] hover:bg-[#fff0f4]'
                 }`}
               >
                 {cat.label}
@@ -99,13 +99,13 @@ export default function ProductCatalog() {
 
           {/* Search Input */}
           <div className="relative w-full md:w-72">
-            <Search className="w-4 h-4 text-stone-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
+            <Search className="w-4 h-4 text-pink-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Cari varian donat..."
-              className="w-full pl-10 pr-4 py-2.5 bg-white border border-[#ebdccc] focus:border-[#96551d] focus:ring-2 focus:ring-[#96551d]/15 rounded-full text-xs sm:text-sm text-[#241a15] outline-none transition-all placeholder:text-stone-400 shadow-xs"
+              className="w-full pl-10 pr-4 py-2.5 bg-white border border-[#fbcfe8] focus:border-[#f43f5e] focus:ring-2 focus:ring-[#f43f5e]/15 rounded-full text-xs sm:text-sm text-[#2d121c] outline-none transition-all placeholder:text-pink-300 shadow-2xs"
             />
           </div>
         </div>
@@ -122,12 +122,12 @@ export default function ProductCatalog() {
             ))}
           </div>
         ) : (
-          <div className="text-center py-16 bg-white rounded-3xl border border-[#ebdccc] p-8 max-w-md mx-auto">
-            <div className="w-14 h-14 mx-auto rounded-full bg-[#faefe5] flex items-center justify-center text-2xl mb-3">
+          <div className="text-center py-16 bg-white rounded-3xl border border-[#fbcfe8] p-8 max-w-md mx-auto">
+            <div className="w-14 h-14 mx-auto rounded-full bg-[#ffe4ea] flex items-center justify-center text-2xl mb-3">
               🍩
             </div>
-            <h3 className="font-serif text-lg font-bold text-[#27180f]">Varian Tidak Ditemukan</h3>
-            <p className="text-xs text-[#6e5849] mt-1 mb-4">
+            <h3 className="font-serif text-lg font-bold text-[#2a0e19]">Varian Tidak Ditemukan</h3>
+            <p className="text-xs text-[#7e3d55] mt-1 mb-4">
               Coba gunakan kata kunci pencarian lain atau pilih tab &ldquo;Semua Donut&rdquo;.
             </p>
             <button
@@ -135,7 +135,7 @@ export default function ProductCatalog() {
                 setActiveCategory('all');
                 setSearchQuery('');
               }}
-              className="px-4 py-2 rounded-full text-xs font-bold bg-[#96551d] text-white hover:bg-[#7e4514]"
+              className="px-5 py-2.5 rounded-full text-xs font-bold bg-[#f43f5e] text-white hover:bg-[#e11d48]"
             >
               Reset Filter
             </button>
@@ -157,7 +157,7 @@ export default function ProductCatalog() {
           onClick={() => setPosterModal(null)}
         >
           <div 
-            className="relative max-w-sm sm:max-w-md w-full bg-white rounded-3xl p-2.5 shadow-2xl overflow-hidden border border-white/20"
+            className="relative max-w-sm sm:max-w-md w-full bg-white rounded-3xl p-2.5 shadow-2xl overflow-hidden border border-pink-200"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -167,7 +167,7 @@ export default function ProductCatalog() {
             >
               <X className="w-5 h-5" />
             </button>
-            <div className="relative aspect-[9/16] w-full rounded-2xl overflow-hidden bg-stone-100">
+            <div className="relative aspect-[9/16] w-full rounded-2xl overflow-hidden bg-pink-50">
               <Image
                 src={posterModal}
                 alt="Poster Katalog Donut"

@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { ChevronDown, HelpCircle } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 import { FAQS } from '@/data/products';
 
 export default function FAQSection() {
@@ -12,14 +12,14 @@ export default function FAQSection() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center max-w-xl mx-auto mb-14 space-y-3">
-          <span className="text-xs uppercase font-bold tracking-widest text-[#a86c2d] bg-[#fbf2e9] px-3.5 py-1.5 rounded-full border border-[#edd5c0]">
+          <span className="text-xs uppercase font-bold tracking-widest text-[#be123c] bg-[#ffe4ea] px-3.5 py-1.5 rounded-full border border-[#fbcfe8]">
             Pusat Informasi
           </span>
-          <h2 className="font-serif text-3xl sm:text-4xl font-extrabold text-[#1f140e]">
+          <h2 className="font-serif text-3xl sm:text-4xl font-extrabold text-[#2a0e19]">
             Pertanyaan Yang Sering Diajukan
           </h2>
-          <p className="text-sm text-[#675447]">
-            Semua yang perlu Anda ketahui mengenai pemesanan, pengiriman, dan bahan kue kami.
+          <p className="text-sm text-[#6e2b44]">
+            Semua yang perlu Anda ketahui mengenai pemesanan, pengiriman, dan varian donat BWL.
           </p>
         </div>
 
@@ -29,22 +29,22 @@ export default function FAQSection() {
             return (
               <div
                 key={idx}
-                className="rounded-2xl border border-[#ebdccc] bg-[#faf7f2] overflow-hidden transition-all"
+                className="rounded-2xl border border-[#fbcfe8] bg-[#fff5f8] overflow-hidden transition-all"
               >
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : idx)}
-                  className="w-full p-5 text-left flex items-center justify-between gap-4 font-serif font-bold text-base text-[#1f140e] hover:text-[#96551d] transition-colors"
+                  className="w-full p-5 text-left flex items-center justify-between gap-4 font-serif font-bold text-base text-[#2a0e19] hover:text-[#e11d48] transition-colors"
                 >
                   <span>{faq.q}</span>
                   <ChevronDown
-                    className={`w-5 h-5 text-[#8f7564] shrink-0 transition-transform duration-200 ${
-                      isOpen ? 'rotate-180 text-[#96551d]' : ''
+                    className={`w-5 h-5 text-[#8a425b] shrink-0 transition-transform duration-200 ${
+                      isOpen ? 'rotate-180 text-[#e11d48]' : ''
                     }`}
                   />
                 </button>
 
                 {isOpen && (
-                  <div className="px-5 pb-5 text-xs sm:text-sm text-[#665345] leading-relaxed border-t border-[#f0e3d5] pt-3">
+                  <div className="px-5 pb-5 text-xs sm:text-sm text-[#6e2b44] leading-relaxed border-t border-[#fce7f3] pt-3">
                     {faq.a}
                   </div>
                 )}

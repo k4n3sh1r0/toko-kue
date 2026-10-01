@@ -3,43 +3,43 @@
 @theme {
   --font-serif: var(--font-serif), Georgia, serif;
   --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
-  --color-bakery-primary: #a86c2d;
-  --color-bakery-accent: #d97706;
-  --color-bakery-dark: #1f140e;
-  --color-bakery-cream: #faf7f2;
+  --color-bakery-primary: #e11d48;
+  --color-bakery-accent: #f43f5e;
+  --color-bakery-dark: #2d101d;
+  --color-bakery-cream: #fff5f8;
 }
 
 :root {
-  --background: #faf7f2;
-  --foreground: #241a15;
+  --background: #fff6f8;
+  --foreground: #3b1828;
 }
 
-/* Custom Scrollbar */
+/* Custom Scrollbar Pink Sweetie */
 ::-webkit-scrollbar {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #f1ebd8;
+  background: #fdf2f6;
 }
 ::-webkit-scrollbar-thumb {
-  background: #d4a373;
+  background: #f472b6;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #b88652;
+  background: #e11d48;
 }
 
 /* Glassmorphism helpers */
 .glass-panel {
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.88);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(229, 219, 206, 0.6);
+  border: 1px solid rgba(251, 207, 232, 0.6);
 }
 
 .glass-panel-dark {
-  background: rgba(31, 20, 14, 0.88);
+  background: rgba(45, 16, 29, 0.92);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
