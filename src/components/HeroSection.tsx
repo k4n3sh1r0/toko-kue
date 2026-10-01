@@ -23,14 +23,14 @@ export default function HeroSection() {
             </div>
 
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#1a110a] leading-[1.15] tracking-tight">
-              Kelezatan Kue Artisan <br />
+              Mochi Donut & <br />
               <span className="italic font-normal bg-gradient-to-r from-[#9c5921] via-[#c67e35] to-[#884614] bg-clip-text text-transparent">
-                Sempurna di Tiap Suapan
+                Artisan Handcrafted
               </span>
             </h1>
 
             <p className="text-base sm:text-lg text-[#5a483e] leading-relaxed max-w-xl mx-auto lg:mx-0">
-              Dibuat secara handmade dari butter Prancis pilihan, cokelat Belgia murni, dan buah-buahan segar tanpa bahan pengawet. Rayakan momen spesialmu bersama kehangatan cita rasa SweetCrumb.
+              Dari Ichigo Daifuku kenyal, sensasi viral Dubai Chewy, hingga Classic Donut lezat isi 6 pcs mulai dari 15rb. Freshly baked setiap pagi dengan bahan premium dan topping melimpah.
             </p>
 
             {/* Badges */}

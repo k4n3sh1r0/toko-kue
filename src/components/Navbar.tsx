@@ -26,7 +26,7 @@ export default function Navbar() {
                 SweetCrumb
               </span>
               <span className="text-[11px] uppercase tracking-widest text-[#a86c2d] font-semibold mt-1 block">
-                Artisan Bakery & Patisserie
+                Artisan Donut & Mochi
               </span>
             </div>
           </Link>

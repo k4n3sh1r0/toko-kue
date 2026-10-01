@@ -1,4 +1,4 @@
-export type CakeCategory = 'all' | 'signature' | 'cheesecake' | 'fruit' | 'tart';
+export type CakeCategory = 'all' | 'mochi' | 'artisan' | 'classic' | 'box';
 
 export interface CakeProduct {
   id: string;
@@ -10,7 +10,7 @@ export interface CakeProduct {
   image: string;
   rating: number;
   reviewCount: number;
-  badge?: 'Best Seller' | 'Chef\'s Pick' | 'New Arrival' | 'Favorit';
+  badge?: 'Best Seller' | 'Chef\'s Pick' | 'New Arrival' | 'Favorit' | 'Promo Box' | 'Viral';
   sizes: {
     label: string;
     portion: string;
