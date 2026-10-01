@@ -85,7 +85,14 @@ export default function Footer() {
             <div className="space-y-2.5 text-xs text-[#b09e91]">
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-[#d49b4d] shrink-0 mt-0.5" />
-                <span>{STORE_INFO.address}</span>
+                <a
+                  href={STORE_INFO.googleMapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  {STORE_INFO.address}
+                </a>
               </div>
               <div className="flex items-center gap-2.5">
                 <Clock className="w-4 h-4 text-[#d49b4d] shrink-0" />

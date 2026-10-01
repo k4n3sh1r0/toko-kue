@@ -16,13 +16,13 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'SweetCrumb Artisan Bakery | Toko Kue Premium & Pastry Segar',
-  description: 'Nikmati aneka cake artisan, Basque burnt cheesecake, strawberry shortcake, dan pastry fresh baked setiap hari. Pesan langsung dengan mudah via WhatsApp!',
-  keywords: ['toko kue', 'artisan bakery', 'kue ulang tahun', 'basque burnt cheesecake', 'kue coklat premium', 'pesan kue jakarta'],
+  title: 'SweetCrumb Artisan Donut & Mochi | Binjai, Sumatera Utara',
+  description: 'Toko mochi donut, artisan donut, dan classic donut fresh baked setiap hari di Jl. Ikan Hiu No.59, Binjai, Sumatera Utara. Pesan praktis langsung via WhatsApp!',
+  keywords: ['mochi donut binjai', 'artisan donut binjai', 'toko donat binjai', 'daifuku donut', 'classic donut 85k', 'pesan donat sumatera utara'],
   openGraph: {
-    title: 'SweetCrumb Artisan Bakery | Kelezatan Kue Premium Setiap Hari',
-    description: 'Pesan kue favoritmu langsung diantar fresh ke rumah atau takeaway.',
-    images: ['/images/hero.jpg'],
+    title: 'SweetCrumb Artisan Donut & Mochi | Binjai',
+    description: 'Pesan mochi donut dan artisan donut favoritmu langsung diantar atau ambil di Jl. Ikan Hiu No.59, Binjai.',
+    images: ['/images/catalog/menu-mochi-donut.png'],
   },
 };
 

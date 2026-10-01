@@ -6,7 +6,8 @@ export const STORE_INFO = {
   whatsappNumber: '6281234567890', // Masukkan nomor WhatsApp toko kamu
   whatsappDisplay: '+62 812-3456-7890',
   instagram: '@artisandonut.id',
-  address: 'Jl. Senopati No. 45, Kebayoran Baru, Jakarta Selatan',
+  address: 'Jl. Ikan Hiu No.59, Binjai, 20351, Sumatera Utara, ID',
+  googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Jl.+Ikan+Hiu+No.59,+Binjai,+20351,+Sumatera+Utara',
   operatingHours: 'Setiap Hari: 08.00 - 21.00 WIB',
   currency: 'IDR',
 };

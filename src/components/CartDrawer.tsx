@@ -224,6 +224,16 @@ export default function CartDrawer() {
                     <span>🏪 Ambil di Toko</span>
                   </button>
                 </div>
+
+                {form.orderType === 'pickup' && (
+                  <div className="mt-2.5 p-3 bg-[#fdf8f3] border border-[#ebdccc] rounded-xl text-xs text-[#6e5849] flex items-start gap-2">
+                    <MapPin className="w-4 h-4 text-[#a86c2d] shrink-0 mt-0.5" />
+                    <div>
+                      <span className="font-bold text-[#322319]">Lokasi Ambil: </span>
+                      <span>{STORE_INFO.address}</span>
+                    </div>
+                  </div>
+                )}
               </div>
 
               {/* Nama & No WA */}
