@@ -24,7 +24,7 @@ export default function HeroSection() {
 
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#1a110a] leading-[1.15] tracking-tight">
               Mochi Donut & <br />
-              <span className="italic font-normal bg-gradient-to-r from-[#9c5921] via-[#c67e35] to-[#884614] bg-clip-text text-transparent">
+              <span className="inline-block pr-3 pb-1 italic font-normal bg-gradient-to-r from-[#9c5921] via-[#c67e35] to-[#884614] bg-clip-text text-transparent">
                 Artisan Handcrafted
               </span>
             </h1>
